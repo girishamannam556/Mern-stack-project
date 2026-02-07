@@ -1,0 +1,51 @@
+.page-center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 350px;
+}
+
+.login-heading {
+  text-align: center;
+  font-size: 24px;
+}
+
+.input-value {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+.success-text {
+  color: green;
+  font-size: 14px;
+  text-align: center;
+}

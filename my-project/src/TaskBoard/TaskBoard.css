@@ -1,0 +1,104 @@
+.taskboard-page {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #f1f5f9;
+  padding: 20px;
+}
+
+.sidebar-title {
+  margin-bottom: 20px;
+}
+
+.status-list {
+  list-style: none;
+  padding: 0;
+}
+
+.status-list li {
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.status-list li:hover {
+  background-color: #e2e8f0;
+}
+
+.status-list .active {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.welcome-text {
+  margin-bottom: 20px;
+}
+
+.empty-text {
+  color: #666;
+}
+
+.task-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.task-desc {
+  color: #555;
+  margin: 10px 0;
+}
+
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-label {
+  font-size: 14px;
+  color: #333;
+}
+
+select {
+  padding: 6px;
+}
+ 
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+ 
+.status-select {
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+ 
+.delete-btn {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
