@@ -60,7 +60,7 @@ function NewTask() {
           }}
         />
 
-        <textarea
+        <input
           placeholder="Enter task description"
           value={description}
           onChange={(e) => {
