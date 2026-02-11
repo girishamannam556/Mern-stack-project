@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './TaskBoard.css'
+import BASE_URL from "../config";
 
 function TaskBoard() {
   const [tasks, setTasks] = useState([])
@@ -13,7 +14,7 @@ function TaskBoard() {
 
   const fetchTasks = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/tasks', {
+      const res = await fetch(`${BASE_URL}/api/tasks`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -28,7 +29,7 @@ function TaskBoard() {
 
   const updateStatus = async (id, newStatus) => {
     try {
-      await fetch(`http://localhost:5000/api/tasks/${id}`, {
+      await fetch(`${BASE_URL}/api/tasks/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -45,7 +46,7 @@ function TaskBoard() {
 
   const deleteTask = async id => {
     try {
-      const res = await fetch(`http://localhost:5000/api/tasks/${id}`, {
+      const res = await fetch(`${BASE_URL}/api/tasks/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,

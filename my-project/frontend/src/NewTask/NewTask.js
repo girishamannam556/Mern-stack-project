@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './NewTask.css'
+import BASE_URL from "../config";
 
 function NewTask() {
   const [title, setTitle] = useState('')
@@ -17,7 +18,7 @@ function NewTask() {
     }
 
     try {
-      const res = await fetch('http://localhost:5000/api/tasks', {
+      const res = await fetch(`${BASE_URL}/api/tasks`,{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
